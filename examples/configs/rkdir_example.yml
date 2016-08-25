@@ -2,6 +2,8 @@ ansible:
   playbooks_dir: examples/playbooks
   inventory_path: examples/inventory.txt
 
+workers: 5
+
 routing_keys:
     - org.fedoraproject.dev.logger.hello_world
 

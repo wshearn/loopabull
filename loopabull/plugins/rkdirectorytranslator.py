@@ -21,7 +21,7 @@ class RkdirectoryTranslator(Plugin):
         Parse routing_key and return the playbook name.
         """
         path = routing_key.split(".")
-        
+
         return os.path.join(*path)
 
 # vim: set expandtab sw=4 sts=4 ts=4

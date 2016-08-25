@@ -14,7 +14,7 @@ class Plugin(object):
     def __repr__(self):
         return "Plugin(key='{}')".format(self.key)
 
-    def looper(self):
+    def query_messages(self):
         """
         each looper plugin has to implement this method
 
@@ -27,7 +27,7 @@ class Plugin(object):
         to the ansible playbook as variables
 
         Example usage:
-            for routing_key, payload_dict in plugin.looper():
+            for routing_key, payload_dict in plugin.query_messages():
                 # do something
 
         """
